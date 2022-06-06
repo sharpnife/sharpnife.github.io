@@ -25,7 +25,7 @@ header_pages:
 style: light 
 listen_for_clients_preferred_style: true
 
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: sharpnife/jekyll-theme-console 
 
 footer: ''
 
