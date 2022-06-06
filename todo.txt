@@ -1,0 +1,13 @@
+TODO:
+
+- About
+- Contact
+- Credits(as footer?)
+- Dark/Light
+
+
+
+Future blogs:
+
+- 100 project euler problems solved
+
