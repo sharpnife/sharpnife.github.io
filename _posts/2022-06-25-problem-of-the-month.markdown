@@ -16,3 +16,6 @@ And as always, all my dear readers are encouraged to try the problems themselves
 
 
 
+<u><a href="{% post_url 2022-06-26-First-word-in-the-dictionary %}">June 2022</a></u>
+
+
