@@ -33,7 +33,7 @@ Can you think of a way to find the first word in the dictionary given two arbitr
 
 ## Solution
 
-The naive way to find the first word is to generate all possible words, sort the list and take the first word.
+A naive way to find the first word is to generate all possible words, sort the list and take the first word.
 But that's boring and time consuming, let's think of a simpler way to find it. 
 <br>
 One trivial(yet important) observation is that, we always have atmost two choices when picking the ```i```<sup>th</sup> letter and it's always better to take the letter which comes first in the alphabetical order. 
