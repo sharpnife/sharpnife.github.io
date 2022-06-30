@@ -25,7 +25,7 @@ String B = "RA"
 Dictionary = ["JARA", "JRAA", "RAJA", "RJAA"]
 ```
 <br>
-Amongst the words in the dictionary, ```"JARA"``` is the first word in the dictionary.
+Amongst the words in the dictionary, ```"JARA"``` is the first word.
 
 <br>
 Can you think of a way to find the first word in the dictionary given two arbitrary strings?
