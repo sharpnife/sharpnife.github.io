@@ -2,7 +2,7 @@
 layout: post
 title:  "What is Life?"
 permalink: /:title/
-date:   2022-06-02 18:38:40 +0530
+date:   2017-10-22 18:38:40 +0530
 weight: 1
 categories: misc
 ---
