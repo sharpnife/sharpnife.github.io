@@ -3,7 +3,7 @@ layout: post
 title:  "Why you should hire me"
 permalink: /:title/
 date:   2022-06-02 18:38:40 +0530
-weight: 2
+weight: 1
 categories: misc
 ---
 
