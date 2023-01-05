@@ -7,7 +7,7 @@ weight: 2
 categories: algorithms, maths
 ---
 
-<h1>Champernowne constant</h1>
+<h1><u>Champernowne constant</u></h1>
 
 Champernowne constant(in base 10) is : 0.12345678910...
 One could see the pattern quite easily, it's a real number with the fractional part as the concatenation of successive integers.

@@ -7,6 +7,7 @@ weight: 2
 categories: misc
 ---
 
+<h1> <u> Why you should hire me </u> </h1>
 <h1> Passionate Learner </h1>
 
 I was fortunate enough to have parents who stressed on the importance of self study, which implanted in me the love for discovery, exploration and problem solving, and the need and importance for deeper understanding. As a result, in my senior high school's final exam I was one of the top scoring student amongst my fellow schoolmates most of whom had private tutors/coaching classes. 
