@@ -34,7 +34,7 @@ def find_Nth_digit(N):
 </p>
 
 <p>
-This approach isn't too favorable when N becomes huge, say, N > 10^18. 
+This approach isn't too favorable when N becomes huge, say, N > $10^{18}$. 
 If we look at the natural numbers we can see a pattern which we can exploit to create a better algorithm.
 The first 9 numbers have 1 digit each.
 The next 90 numbers have 2 digits each.
@@ -44,11 +44,11 @@ And so on.
 
 We can write it out as a polynomial, F(D).
 
-F(D) = number of digits upto 10 ^ D - 1, i.e integers having <= D digits
+F(D) = number of digits upto $10 ^ D - 1$, i.e integers having <= D digits
 
-F(D) = 9 * 1 + 90 * 2 + ... + 9 * 10 ^ (D - 1) * D
+F(D) = $(9 \times \!1) + (90 \times 2) \: + ... \: + (9 \times \! 10 ^ {(D - 1)} \times D)$
 
-We can binary search on the value of D and then binary search again(if needed) to find the Nth digit amongst the (D + 1)th digit numbers. This reduces the complexity of the algorithm by a lot, and we have something in the form of O(log(N)) time complexity.
+We can binary search on the value of D and then binary search again(if needed) to find the Nth digit amongst the (D + 1)th digit numbers. This reduces the complexity of the algorithm by a lot, and we have something in the form of $O(\log N)$ time complexity.
 </p>
 
 <p id="1">

@@ -35,7 +35,7 @@ url: "https://sharpnife.github.io" # the base hostname & protocol for your site,
   #github_username:  jekyll
 
 # Build settings
-# theme: sharpnife/jekyll-theme-console
+# theme: jekyll-theme-console
 #theme: null
 plugins:
   - jekyll-feed
