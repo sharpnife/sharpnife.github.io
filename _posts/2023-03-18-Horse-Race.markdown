@@ -23,7 +23,8 @@ If $K$ horses qualified for the i<sup>th</sup> round, then there will be $K / 2$
 The winning criteria for each round is one of the two possibilities, either the stronger horse(horse which has the higher strength) defeats the weaker horse, or vice-versa.
 Fortunately for the equestrians, the winning conditions of each round is given before the tournament starts, and is in the form of a binary string, i.e. strings which have either '1' or '0'(like "101"). If the i<sup>th</sup> letter is '1', then the stronger horse wins the race, and if the i<sup>th</sup> letter is '0' the weaker horse takes the win.
 
-Given this information, can you figure out if Shelly could likely be crowned as the champion?
+Given this information, can you figure out if Shelly could likely be crowned as the champion?<sub><a href="#1">1</a></sub>
+
 </p>
 
 <br>
@@ -31,7 +32,13 @@ Given this information, can you figure out if Shelly could likely be crowned as 
 
 Before diving into the solution, I'd like the reader to take some time off to savor the problem and try cracking it.
 <p>
+It's advised to not look at the hint until you've tried every thing you can.
+<details> 
+ <summary> Hint </summary>
+Shelly wants to win the tournament that means she has to win the last round. Try backtracking from the last round to the first round.
+</details>
 <!-- TODO: hints? -->
+<br>
 <h3> Solution </h3>
 We can make couple of basic observations right off the bat: <br>
 <!-- Since Shelly needs to win the tournment We can make some observations: <br> -->
@@ -119,23 +126,41 @@ There are a few observations we can make from the simulation we just did:
        (B will always win so opponent does not matter)
     - For S to win, "S vs S" always has to happen 
 </p>
-Looks like we get a new "B" in the $(i - 1)$<sup>th</sup> whenever the winning condition is '0'.
+Looks like we get a new "B" in the $(i - 1)$<sup>th</sup> round whenever the winning condition is '0'.
 We can write it formally as...
 
 $$
-    F(x) = F(x - 1) + F(x - 1) + 1 
+    F(b) = F(b - 1) + F(b - 1) + 1 
 $$
 $$
-    F(x) = 2 \cdot F(x - 1) + 1
+    F(b) = 2 \cdot F(b - 1) + 1
+$$
+<br>
+If $F(0) = 0$, then
+$$
+    F(b) = 2^b - 1, \forall b \in \mathbf{N}
 $$
 
-Where $F(x)$ is the number of Bs at a particular round having winning condition as '0', and $F(x - 1)$ is the number of Bs at the previous round which had the same winning condition. 
-Since, each B in the previous round would produce a new B, we get $2\cdot F(x - 1)$ and the 1 is for the B which is produced by x.
+Where $F(b)$ is the number of Bs at a particular round having winning condition as '0', and $F(b - 1)$ is the number of Bs at the previous round which had the same winning condition. 
+Since, each B in the previous round would produce a new B, we get $2\cdot F(b - 1)$ and the 1 is for the B which is produced by x.
+<br>
+```
+ x    B  B    B  S    O  O    O - 1st round -> b = 2, F(b) = 2 * F(b - 1) + 1 = 2 * F(1) + 1 = 3
+  \  /    \  /    \  /    \  /
+    x       B       S       O - 2nd round -> b = 1, F(b) = 2 * F(b - 1) + 1 = 2 * F(0) + 1 = 1
+    \    /           \    / 
+       x               S   - 3rd round -> b = 0, F(0) = 0
+       \              /
+         \          /
+           \      /
+              x
+```
+<br>
 
-It follows that, for Shelly to win the tournament: the total number of Bs required is atleast $2^L - 1$, where $L$ stands for the number of rounds having winning condition as "0".
-And similarly for S, the total number of Ss required is $2^R - 1$, where $R$ stands for the number of rounds having winning condition as "1".
+It follows that, for Shelly to win the tournament: the total number of Bs required is atleast $2^b - 1$, where $b$ stands for the number of rounds having winning condition as "0".
+And similarly for S, the total number of Ss required is $2^s - 1$, where $s$ stands for the number of rounds having winning condition as "1".
 
-Hence, Shelly can win the tournament if there are atleast $2^L - 1$ stronger horses and $2^R - 1$ weaker horses.
+Hence, Shelly can win the tournament if there are atleast $2^b - 1$ stronger horses and $2^s - 1$ weaker horses.
 
 So for the given winning_condition "001", Shelly must have atleast $2^2 - 1 = 3$ stronger horses and $2^1 - 1 = 1$ weaker horse. 
 From which it follows that, if Big Dawg's strength is one of {2, 3, 4, 5} then Shelly can possibly win the race!
@@ -144,3 +169,7 @@ From which it follows that, if Big Dawg's strength is one of {2, 3, 4, 5} then S
 Bonus problem: What is the expected probability of Shelly winning the tournament?
 
     
+<p id="1">
+[1] - The problem is a variant of a <a
+href="https://codeforces.com/problemset/problem/1767/D">codeforces problem.</a>
+</p>
