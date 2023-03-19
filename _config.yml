@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # remote_theme: sharpnife/jekyll-theme-console 
+remote_theme: sharpnife/minimal-mistakes-jekyll
 minimal_mistakes_skin: "mint"
 # Available skins: "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -51,10 +52,11 @@ url: "https://sharpnife.github.io" # the base hostname & protocol for your site,
 # github_username:  jekyll
 
 # Build settings
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
 # theme: null
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.

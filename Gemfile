@@ -9,6 +9,8 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 gem "minimal-mistakes-jekyll"
+gem "jekyll-include-cache"
+
 
 # gem "jekyll-theme-console"
 # gem "jekyll-theme-minimal"
