@@ -4,7 +4,6 @@
 
  layout: home
 ---
-{{ site.data.navigation }}
 
 Welcome to sharpnife's blog!
 <br>

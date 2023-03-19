@@ -3,6 +3,7 @@
     title: "Horse Race"
     permalink: /:title/
     date:   2023-03-18 01:14:27 +0530
+    excerpt: Equestrianism
 ---
 <!-- <h1> Horse Race </h1> -->
 <i>This blog is part of the <a href="{% post_url 2022-06-25-problem-of-the-month%}">POTM series.</a></i>

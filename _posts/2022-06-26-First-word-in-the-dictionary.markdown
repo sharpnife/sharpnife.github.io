@@ -3,6 +3,7 @@ layout: single
 title: "First word in the dictionary"
 permalink: /:title/
 date:   2022-06-26 19:21:50 +0530
+excerpt: Which is the first word?
 ---
 <!-- <h1> <u> First word in the dictionary </u> </h1> -->
 <i>This blog is part of the <a href="{% post_url 2022-06-25-problem-of-the-month%}">POTM series.</a></i>

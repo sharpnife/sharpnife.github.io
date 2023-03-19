@@ -6,7 +6,7 @@ permalink: /about/
 
 Hey there! 
 <br>
-My name is Praise Winston, I'm a software engineer by profession and a competitive programmer, musician and a thinker by choice.
+My name is Praise Winston, I'm a software engineer by profession and a competitive programmer, musician and a thinker by choice/chance.
 <br>
 <br>
 I created this blog to share the weird ideas, shower thoughts that randomly spring up in my brain at times along with the other stuffs. I don't know when my time would be over so better share with the world what I learnt before it's too late. :P

@@ -5,6 +5,7 @@ permalink: /:title/
 date:   2022-06-02 18:38:40 +0530
 weight: 2
 categories: algorithms, maths
+excerpt: 0.123456789...
 ---
 
 <!-- <h1><u>Champernowne constant</u></h1> -->

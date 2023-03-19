@@ -5,6 +5,7 @@ permalink: /:title/
 date:   2017-10-22 18:38:40 +0530
 weight: 1
 categories: misc
+excerpt: It all started with a Big Bang...
 ---
 
 <!-- <h1><u> What is Life? </u></h1> -->
