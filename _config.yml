@@ -17,26 +17,42 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-header_pages:
-  #- credits.markdown
-  - contact.markdown
-  - about.markdown
 
-remote_theme: sharpnife/jekyll-theme-console 
+# remote_theme: sharpnife/jekyll-theme-console 
+minimal_mistakes_skin: "mint"
+# Available skins: "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-#footer: ''
+top_bar:
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+
+
+social: 
+  links:
+    - "https://github.com/sharpnife"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+
 
 title: sharpnife's blog 
 email: praisewinston07@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my blog, here I’d be sharing all sorts of weird ideas, algorithms, solutions to various kinds of problems, life lessons and much more…!
 url: "https://sharpnife.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-  #twitter_username: jekyllrb
-  #github_username:  jekyll
+# twitter_username: jekyllrb
+# github_username:  jekyll
 
 # Build settings
-# theme: jekyll-theme-console
-#theme: null
+theme: minimal-mistakes-jekyll
+# theme: null
 plugins:
   - jekyll-feed
 
@@ -59,3 +75,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+

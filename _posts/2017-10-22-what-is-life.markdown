@@ -1,13 +1,13 @@
 ---
-layout: post
+layout: single
 title:  "What is Life?"
 permalink: /:title/
-date:   2022-06-02 18:38:40 +0530
+date:   2017-10-22 18:38:40 +0530
 weight: 1
 categories: misc
 ---
 
-<h1><u> What is Life? </u></h1>
+<!-- <h1><u> What is Life? </u></h1> -->
 
 It all started with a Big Bang, that’s the opening title of the famous comedy-nerdy show “The Big Bang Theory”. But that’s how the universe was born with a — Big Bang (atleast according to scientists). And the universe is expanding, but what about us? We come to this earth from our mother’s womb, filled with curiosity around pondering on what’s going around us. At around age 4 or 5 we are sent to schools, then college, then we become the slaves of the modern-wage system doing a typical 9 to 5 jobs.
 

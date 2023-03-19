@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Why you should hire me"
 permalink: /:title/
 date:   2022-06-02 18:38:40 +0530
@@ -7,11 +7,13 @@ weight: 2
 categories: misc
 ---
 
-<h1> <u> Why you should hire me </u> </h1>
+<!-- <h1> <u> Why you should hire me </u> </h1> -->
 <h1> Passionate Learner </h1>
 
 I was fortunate enough to have parents who stressed on the importance of self study, which implanted in me the love for discovery, exploration and problem solving, and the need and importance for deeper understanding. As a result, in my senior high school's final exam I was one of the top scoring student amongst my fellow schoolmates most of whom had private tutors/coaching classes. 
 The learning skils that I had acquired during my school times translated very well into my college as well as professional life where I've been assigned projects on technologies that I've never heard/used and it surprises my colleagues when I tell them that this was my first time working on xyz. :P
+<br>
+<br>
 
 <details> 
  <summary> Story </summary>
@@ -19,12 +21,15 @@ The learning skils that I had acquired during my school times translated very we
 At the end it came out wonderfully, the client was very pleased with how the
 payment flow worked and my PM was very surprised knowing that this was my first time working with stripe. :P
 </details>
+<br>
+
 
 <h1> Obsessive Problem Solver </h1>
 
 It's not uncommon for my family to see me staring at the ceiling for long periods of time, which mostly signals that I'm working on a problem, destructuring it and finding clues, patterns to solve it. It's one of my favorite activities!
 The kick that one gets from solving a problem is almost like a spiritual experience, especially if it was a challenging problem.  
 
+<br>
 <h1> Loves Challenges </h1>
 
 This shouldn't come as a surprise if you've read the first two points. :P
